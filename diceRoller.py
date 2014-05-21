@@ -29,10 +29,10 @@ def show_dice(roll):
         print(s6)
 
 
-roll = roll()
+rollvalue = roll()
 time.sleep(1)
 
-userinput = raw_input("to roll a dice type a 'Y'")
-
-if userinput == "Y":
-    show_dice(roll)
+while rollvalue != 5:
+    show_dice(rollvalue)
+    time.sleep(1)
+    rollvalue = roll()
