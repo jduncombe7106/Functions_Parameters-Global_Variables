@@ -13,25 +13,26 @@ s6 = "- - - - -\n| O   O |\n| O   O |\n| O   O |\n- - - - -\n"
 
 def roll():
     print("rolling.....")
-    roll = random.randint(1,6)
-    return roll
-    
+    roll = random.randint(0,5)
+    return(roll)
 
 
 def show_dice(roll):
-        if roll == 1:
-            print(s1)
-        elif roll == 2:
-            print(s2)
-        elif roll == 3:
-            print(s3)
-        elif roll == 4:
-            print(s4)
-        elif roll == 5:
-            print(s5)
-        elif roll == 6:
-            print(s6)
+    if roll == 0:
+        print(s1)
+    elif roll == 1:
+        print(s2)
+    elif roll == 2:
+        print(s3)
+    elif roll == 3:
+        print(s4)
+    elif roll == 4:
+        print(s5)
+    elif roll == 5:
+        print(s6)
 
-myroll = roll()
+
+roll = roll()
 time.sleep(1)
-show_dice(myroll)
+show_dice(roll)
+
