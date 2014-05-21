@@ -1,6 +1,3 @@
-#dice roll program
-#Describe the purpose of this program here.`
-
 import random
 import time
 
@@ -34,5 +31,8 @@ def show_dice(roll):
 
 roll = roll()
 time.sleep(1)
-show_dice(roll)
 
+userinput = raw_input("to roll a dice type a 'Y'")
+
+if userinput == "Y":
+    show_dice(roll)
